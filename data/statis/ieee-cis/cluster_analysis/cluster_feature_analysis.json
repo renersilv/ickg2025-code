@@ -1,0 +1,62 @@
+{
+  "0": {
+    "top_deviating_features": [
+      "D8",
+      "dist2",
+      "D6"
+    ],
+    "deviations": {
+      "D8": 0.9999999999924659,
+      "dist2": 0.9999999999896199,
+      "D6": 0.9999999999895014
+    }
+  },
+  "1": {
+    "top_deviating_features": [
+      "V16",
+      "V58",
+      "V57"
+    ],
+    "deviations": {
+      "V16": 8.610704313193468,
+      "V58": 8.394297582511491,
+      "V57": 8.385826122578086
+    }
+  },
+  "2": {
+    "top_deviating_features": [
+      "ProductCD_R",
+      "C4",
+      "C3"
+    ],
+    "deviations": {
+      "ProductCD_R": 11.488725839155311,
+      "C4": 9.161486503580942,
+      "C3": 8.258974659520995
+    }
+  },
+  "3": {
+    "top_deviating_features": [
+      "P_emaildomain_is_missing",
+      "dist1_is_zero",
+      "D8"
+    ],
+    "deviations": {
+      "P_emaildomain_is_missing": 4.631382615433851,
+      "dist1_is_zero": 1.218213172505832,
+      "D8": 0.9999999999924659
+    }
+  },
+  "4": {
+    "top_deviating_features": [
+      "V28",
+      "V27",
+      "M1_is_missing"
+    ],
+    "deviations": {
+      "V28": 7.458925298348944,
+      "V27": 7.458925017655665,
+      "M1_is_missing": 2.253488676163804
+    }
+  }
+}

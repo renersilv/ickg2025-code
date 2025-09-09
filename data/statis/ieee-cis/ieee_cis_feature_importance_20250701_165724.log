@@ -1,0 +1,71 @@
+2025-07-01 16:57:24,577 - IEEECISFeatureImportance - INFO - === Iniciando Análise de Importância de Features para IEEE-CIS ===
+2025-07-01 16:57:24,577 - IEEECISFeatureImportance - INFO - Diretório do script: /graphsentinel_2.0/src/code/ieee-cis/3_feature_engineering
+2025-07-01 16:57:24,578 - IEEECISFeatureImportance - INFO - Raiz do projeto: /graphsentinel_2.0
+2025-07-01 16:57:24,578 - IEEECISFeatureImportance - INFO - Diretório de logs: /graphsentinel_2.0/data/statis/ieee-cis
+2025-07-01 16:57:24,578 - IEEECISFeatureImportance - INFO - Carregando dados de /graphsentinel_2.0/data/parquet/ieee-cis/ieee-cis-features.parquet
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO - Dataset expandido carregado: (284000, 180) | Taxa de fraude: 0.0362
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO - Tipos de features:
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Original PCA (V2-V59): 53
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Card features: 18
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Address features: 6
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - C features: 11
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - D features: 12
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - M features: 9
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Email features: 12
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Temporal features: 7
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Amount features: 5
+2025-07-01 16:57:24,988 - IEEECISFeatureImportance - INFO -   - Clustering features: 6
+2025-07-01 16:57:24,989 - IEEECISFeatureImportance - INFO -   - PCA features: 6
+2025-07-01 16:57:24,989 - IEEECISFeatureImportance - INFO -   - Anomaly features: 1
+2025-07-01 16:57:24,989 - IEEECISFeatureImportance - INFO -   - Magnitude features: 2
+2025-07-01 16:57:24,989 - IEEECISFeatureImportance - INFO - --- Executando Análise de Importância de Features ---
+2025-07-01 16:57:24,989 - IEEECISFeatureImportance - INFO - Executando análise avançada de importância de features
+2025-07-01 16:57:25,643 - IEEECISFeatureImportance - INFO - Convertendo 15 colunas categóricas para numéricas...
+2025-07-01 16:57:26,477 - IEEECISFeatureImportance - WARNING - Coluna card1_card2_combined tem 10579 categorias únicas - convertendo para hash
+2025-07-01 16:57:26,607 - IEEECISFeatureImportance - INFO - Dataset com features expandidas - Total: 178 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   original_pca: 53 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   transaction_basic: 1 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   card_features: 18 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   product_features: 4 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   address_features: 6 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   distance_features: 10 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   email_features: 12 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   c_features: 11 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   d_features: 12 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   m_features: 9 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   temporal_engineered: 7 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   amount_engineered: 6 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   statistical_features: 7 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   interaction_features: 3 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   clustering_features: 6 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   anomaly_features: 1 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   pca_features: 6 features
+2025-07-01 16:57:26,608 - IEEECISFeatureImportance - INFO -   magnitude_features: 2 features
+2025-07-01 16:57:26,609 - IEEECISFeatureImportance - INFO - Verificando features constantes...
+2025-07-01 16:57:27,015 - IEEECISFeatureImportance - WARNING - Removendo feature constante (valores únicos): card1_is_missing
+2025-07-01 16:57:27,044 - IEEECISFeatureImportance - WARNING - Removendo feature constante (valores únicos): addr1_addr2_same
+2025-07-01 16:57:27,088 - IEEECISFeatureImportance - WARNING - Removendo feature constante (valores únicos): c_missing_count
+2025-07-01 16:57:27,105 - IEEECISFeatureImportance - WARNING - Removendo feature constante (valores únicos): product_is_missing
+2025-07-01 16:57:27,459 - IEEECISFeatureImportance - INFO - Using 174 non-constant features for importance analysis
+2025-07-01 16:57:27,459 - IEEECISFeatureImportance - INFO - Verificação final de tipos de dados...
+2025-07-01 16:57:27,462 - IEEECISFeatureImportance - INFO - Análise preparada com 174 features numéricas
+2025-07-01 16:57:27,944 - IEEECISFeatureImportance - INFO - Calculando importância com Random Forest...
+2025-07-01 16:57:44,652 - IEEECISFeatureImportance - INFO - Random Forest AUC: 0.9526
+2025-07-01 16:57:44,652 - IEEECISFeatureImportance - INFO - Executando seleção estatística de features...
+2025-07-01 16:57:45,468 - IEEECISFeatureImportance - INFO - Features selecionadas estatisticamente: 30
+2025-07-01 16:57:45,469 - IEEECISFeatureImportance - INFO - Calculando permutation importance...
+2025-07-01 17:02:03,884 - IEEECISFeatureImportance - INFO - Permutation importance calculada para 30 features
+2025-07-01 17:02:03,884 - IEEECISFeatureImportance - INFO - SHAP values pulados (dataset muito grande ou SHAP não disponível)
+2025-07-01 17:02:03,886 - IEEECISFeatureImportance - INFO - Análise avançada de importância concluída: 30 features selecionadas
+2025-07-01 17:02:03,886 - IEEECISFeatureImportance - INFO - Métodos utilizados: 1
+2025-07-01 17:02:03,886 - IEEECISFeatureImportance - INFO - Top 5 features: ['anomaly_score', 'C13', 'C14', 'D2', 'C2']
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO - === Análise de Importância de Features Concluída ===
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO - Resumo da Análise de Features Expandidas:
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Total de features analisadas: 179
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Features importantes identificadas: 30
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Métodos utilizados: 1
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - AUC Random Forest: 0.9526
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Top 10 features: ['anomaly_score', 'C13', 'C14', 'D2', 'C2', 'dt_per_amt', 'ProductCD', 'C8', 'amount_rank', 'card1']
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Taxa de redução de features: 0.172
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Proporção de features engineered: 0.833
+2025-07-01 17:02:03,952 - IEEECISFeatureImportance - INFO -   - Arquivo salvo: feature_importance_results.json

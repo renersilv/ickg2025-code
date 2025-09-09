@@ -1,0 +1,74 @@
+{
+  "cluster_assignments_file": "cluster_assignments.csv",
+  "cluster_statistics": {
+    "total_count": {
+      "0": 163930,
+      "1": 29369,
+      "2": 21203,
+      "3": 35924,
+      "4": 33574
+    },
+    "fraud_count": {
+      "0": 3151,
+      "1": 3842,
+      "2": 1530,
+      "3": 884,
+      "4": 875
+    },
+    "fraud_rate": {
+      "0": 0.0192,
+      "1": 0.1308,
+      "2": 0.0722,
+      "3": 0.0246,
+      "4": 0.0261
+    }
+  },
+  "high_risk_clusters": [
+    1,
+    2
+  ],
+  "n_clusters": 5,
+  "high_risk_threshold": 0.05,
+  "cluster_quality_metrics": {
+    "silhouette_score": 0.1575468382389443,
+    "calinski_harabasz_score": 1470.579002210823,
+    "davies_bouldin_score": 1.8877493591667691
+  },
+  "graph_construction_insights": {
+    "node_attributes": {
+      "distinctive_features": [
+        "V16",
+        "M1_is_missing",
+        "V5",
+        "addr2_is_missing",
+        "V46",
+        "V19",
+        "M3_T",
+        "V13",
+        "V47",
+        "V20"
+      ],
+      "cluster_membership": "cluster_id"
+    },
+    "edge_construction": {
+      "cluster_based_edges": {
+        "same_cluster_threshold": 0.8,
+        "cross_cluster_threshold": 0.3,
+        "high_risk_cluster_boost": 1.5
+      }
+    },
+    "subgraph_analysis": {
+      "high_risk_clusters": [
+        1,
+        2
+      ],
+      "cluster_isolation": {
+        "0": 0.0192,
+        "1": 0.1308,
+        "2": 0.0722,
+        "3": 0.0246,
+        "4": 0.0261
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "feature_overlap": {
+    "correlation_analysis_vs_pca_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 5,
+      "set2_size": 8
+    },
+    "correlation_analysis_vs_cluster_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 5,
+      "set2_size": 10
+    },
+    "correlation_analysis_vs_anomaly_detection": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 5,
+      "set2_size": 8
+    },
+    "correlation_analysis_vs_temporal_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 5,
+      "set2_size": 2
+    },
+    "pca_analysis_vs_cluster_analysis": {
+      "jaccard_similarity": 0.058823529411764705,
+      "overlap_coefficient": 0.125,
+      "intersection_size": 1,
+      "common_features": [
+        "V46"
+      ],
+      "set1_size": 8,
+      "set2_size": 10
+    },
+    "pca_analysis_vs_anomaly_detection": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 8,
+      "set2_size": 8
+    },
+    "pca_analysis_vs_temporal_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 8,
+      "set2_size": 2
+    },
+    "cluster_analysis_vs_anomaly_detection": {
+      "jaccard_similarity": 0.058823529411764705,
+      "overlap_coefficient": 0.125,
+      "intersection_size": 1,
+      "common_features": [
+        "addr2_is_missing"
+      ],
+      "set1_size": 10,
+      "set2_size": 8
+    },
+    "cluster_analysis_vs_temporal_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 10,
+      "set2_size": 2
+    },
+    "anomaly_detection_vs_temporal_analysis": {
+      "jaccard_similarity": 0.0,
+      "overlap_coefficient": 0.0,
+      "intersection_size": 0,
+      "common_features": [],
+      "set1_size": 8,
+      "set2_size": 2
+    }
+  },
+  "consistency_scores": {
+    "mean_jaccard": 0.011764705882352941,
+    "std_jaccard": 0.023529411764705882,
+    "max_jaccard": 0.058823529411764705,
+    "min_jaccard": 0.0
+  },
+  "recommendations": [
+    "Extremely low feature consistency. Consider reviewing feature engineering and analysis parameters."
+  ],
+  "validation_passed": false,
+  "feature_categories": {
+    "original_features": [
+      "V16",
+      "V14",
+      "V45",
+      "V51",
+      "V5",
+      "V44",
+      "V43",
+      "Time_hour",
+      "V46",
+      "V19",
+      "V13",
+      "V47",
+      "V20",
+      "V52"
+    ],
+    "engineered_features": [
+      "V24_V38_product",
+      "dist2_category",
+      "ProductCD_C"
+    ],
+    "statistical_features": [
+      "M1_is_missing",
+      "C2",
+      "TransactionAmt",
+      "hour_sin",
+      "is_rare_hour",
+      "TransactionDT",
+      "dist2_is_missing",
+      "addr_missing_count",
+      "addr2_is_missing",
+      "M3_T",
+      "card_missing_count",
+      "R_emaildomain_is_missing",
+      "addr1_is_missing",
+      "addr2"
+    ]
+  },
+  "feature_sets_by_analysis": {
+    "correlation_analysis": [
+      "V45",
+      "V51",
+      "V44",
+      "V24_V38_product",
+      "V52"
+    ],
+    "pca_analysis": [
+      "C2",
+      "V14",
+      "TransactionAmt",
+      "hour_sin",
+      "is_rare_hour",
+      "V46",
+      "card_missing_count",
+      "R_emaildomain_is_missing"
+    ],
+    "cluster_analysis": [
+      "V16",
+      "M1_is_missing",
+      "V5",
+      "V46",
+      "addr2_is_missing",
+      "V19",
+      "M3_T",
+      "V13",
+      "V47",
+      "V20"
+    ],
+    "anomaly_detection": [
+      "addr1_is_missing",
+      "V43",
+      "dist2_is_missing",
+      "addr_missing_count",
+      "addr2_is_missing",
+      "dist2_category",
+      "addr2",
+      "ProductCD_C"
+    ],
+    "temporal_analysis": [
+      "TransactionDT",
+      "Time_hour"
+    ]
+  }
+}

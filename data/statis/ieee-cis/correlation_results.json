@@ -1,0 +1,2183 @@
+{
+  "high_amount_correlations": {
+    "TransactionAmt": 1.0,
+    "is_amount_extreme_high": 0.7574464069123548,
+    "amount_log": 0.721205915674278,
+    "amount_rank": 0.5486022760677095,
+    "dt_per_amt": 0.2583243079824159,
+    "is_small_amount": 0.23289009065599614,
+    "V50": 0.1511215844520257,
+    "card6_credit": 0.14565206226691277,
+    "card6_debit": 0.1452956728786017,
+    "V51": 0.1434300312403041,
+    "ProductCD_C": 0.1411651266635934,
+    "V42": 0.14067901396245028,
+    "addr1_is_missing": 0.1385388793607149,
+    "addr_missing_count": 0.1385388793607149,
+    "addr2_is_missing": 0.1385388793607149,
+    "V16": 0.1369679923348191,
+    "ProductCD_W": 0.13619815780084088,
+    "V21": 0.1353831989115709,
+    "V43": 0.1349782670971413,
+    "V57": 0.1341535028190783,
+    "V52": 0.13411817312863872,
+    "V33": 0.13100103505484423,
+    "V18": 0.13039292927048324,
+    "R_emaildomain_is_missing": 0.12985457865815758,
+    "V22": 0.12933583910291963,
+    "V39": 0.12841914980999103,
+    "V58": 0.12755367410610965,
+    "V59": 0.12616696142336303,
+    "V34": 0.12528071622982398,
+    "P_R_email_same": 0.12353066572286056,
+    "V40": 0.12091665669081486,
+    "V35": 0.11368030979659231,
+    "card3": 0.11151977888423172,
+    "V36": 0.10693849365973311,
+    "D8": 0.10132052229463903
+  },
+  "high_correlation_pairs": [
+    {
+      "feature1": "V16",
+      "feature2": "addr2_is_missing",
+      "correlation": 0.9462453343912273
+    },
+    {
+      "feature1": "V16",
+      "feature2": "ProductCD_C",
+      "correlation": 0.9650260339393337
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V18",
+      "correlation": 0.8123795217264694
+    },
+    {
+      "feature1": "V16",
+      "feature2": "addr_missing_count",
+      "correlation": 0.9462453343912273
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V57",
+      "correlation": 0.9549848111667825
+    },
+    {
+      "feature1": "V16",
+      "feature2": "R_emaildomain_is_missing",
+      "correlation": 0.9142378623492163
+    },
+    {
+      "feature1": "V16",
+      "feature2": "addr2",
+      "correlation": 0.8274589535467918
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V50",
+      "correlation": 0.9705856767646405
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V43",
+      "correlation": 0.856057493408676
+    },
+    {
+      "feature1": "V16",
+      "feature2": "P_R_email_same",
+      "correlation": 0.9742939257512206
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V58",
+      "correlation": 0.9006221320676815
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V21",
+      "correlation": 0.8400618869581703
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V42",
+      "correlation": 0.8988338348089143
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V52",
+      "correlation": 0.8522824154857404
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V33",
+      "correlation": 0.9334760858399285
+    },
+    {
+      "feature1": "V16",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8930178631535153
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V34",
+      "correlation": 0.8873010306497556
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V39",
+      "correlation": 0.8230924036009472
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V51",
+      "correlation": 0.912126469335598
+    },
+    {
+      "feature1": "V16",
+      "feature2": "V59",
+      "correlation": 0.8104191126388948
+    },
+    {
+      "feature1": "V16",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.9462453343912273
+    },
+    {
+      "feature1": "V36",
+      "feature2": "V35",
+      "correlation": 0.9282548286571752
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "ProductCD_C",
+      "correlation": 0.9776820449802169
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V18",
+      "correlation": 0.8470575266249956
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "addr_missing_count",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V57",
+      "correlation": 0.9123759381055606
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V50",
+      "correlation": 0.9477039868810938
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V43",
+      "correlation": 0.862108534143835
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8112905570436483
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V58",
+      "correlation": 0.8614317735744921
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V21",
+      "correlation": 0.8800835483443596
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V42",
+      "correlation": 0.9030942956540444
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V52",
+      "correlation": 0.8391907317057895
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V33",
+      "correlation": 0.8932468143243629
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V34",
+      "correlation": 0.8405073075332292
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V39",
+      "correlation": 0.8273086017204542
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V51",
+      "correlation": 0.8985676422209881
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V59",
+      "correlation": 0.8249801039368508
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "V22",
+      "correlation": 0.8153511796686539
+    },
+    {
+      "feature1": "addr2_is_missing",
+      "feature2": "addr1_is_missing",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "V13",
+      "feature2": "V12",
+      "correlation": 0.9219229208533896
+    },
+    {
+      "feature1": "card6_debit",
+      "feature2": "card6_credit",
+      "correlation": 0.9840192698715053
+    },
+    {
+      "feature1": "V20",
+      "feature2": "V19",
+      "correlation": 0.9163345505055455
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V18",
+      "correlation": 0.8408405031783779
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V43",
+      "correlation": 0.8603765309412938
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V21",
+      "correlation": 0.8077968828633832
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V42",
+      "correlation": 0.8325800837488795
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V39",
+      "correlation": 0.929152979311444
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V59",
+      "correlation": 0.8453428369532109
+    },
+    {
+      "feature1": "V40",
+      "feature2": "V22",
+      "correlation": 0.8064036985920322
+    },
+    {
+      "feature1": "V28",
+      "feature2": "V27",
+      "correlation": 0.9581712260704356
+    },
+    {
+      "feature1": "V5",
+      "feature2": "V4",
+      "correlation": 0.9162089676996433
+    },
+    {
+      "feature1": "amount_log",
+      "feature2": "amount_rank",
+      "correlation": 0.9515498463186406
+    },
+    {
+      "feature1": "V54",
+      "feature2": "V53",
+      "correlation": 0.9187033757556926
+    },
+    {
+      "feature1": "V24_V38_product",
+      "feature2": "V38",
+      "correlation": 0.8470452380647064
+    },
+    {
+      "feature1": "D4",
+      "feature2": "D6",
+      "correlation": 0.9664872913380343
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V18",
+      "correlation": 0.8347448005551117
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "addr_missing_count",
+      "correlation": 0.9776820449802169
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V57",
+      "correlation": 0.9305519010923552
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V50",
+      "correlation": 0.9670032136305632
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V43",
+      "correlation": 0.8566383895494978
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8290988423314731
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V58",
+      "correlation": 0.8776389723068129
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V21",
+      "correlation": 0.866778603965786
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V42",
+      "correlation": 0.8972940225353035
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V52",
+      "correlation": 0.8570325605909129
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V33",
+      "correlation": 0.9073692136361932
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V34",
+      "correlation": 0.8571086240568976
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V39",
+      "correlation": 0.8215913615843139
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V51",
+      "correlation": 0.9173536201788269
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V59",
+      "correlation": 0.818456801864236
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "V22",
+      "correlation": 0.8036337139891438
+    },
+    {
+      "feature1": "ProductCD_C",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.9776820449802169
+    },
+    {
+      "feature1": "card4_visa",
+      "feature2": "card4_mastercard",
+      "correlation": 0.9479275685396431
+    },
+    {
+      "feature1": "V18",
+      "feature2": "addr_missing_count",
+      "correlation": 0.8470575266249956
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V57",
+      "correlation": 0.8228259589163737
+    },
+    {
+      "feature1": "V18",
+      "feature2": "R_emaildomain_is_missing",
+      "correlation": 0.8831646280531997
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V50",
+      "correlation": 0.902351125907935
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V43",
+      "correlation": 0.8687921695909089
+    },
+    {
+      "feature1": "V18",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8212514726876444
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V21",
+      "correlation": 0.9543967037439901
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V42",
+      "correlation": 0.909013252327145
+    },
+    {
+      "feature1": "V18",
+      "feature2": "ProductCD_W",
+      "correlation": 0.9097817432612697
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V39",
+      "correlation": 0.878153799292153
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V51",
+      "correlation": 0.8198680898494113
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V59",
+      "correlation": 0.8943744186917467
+    },
+    {
+      "feature1": "V18",
+      "feature2": "V22",
+      "correlation": 0.9160482448368023
+    },
+    {
+      "feature1": "V18",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8470575266249956
+    },
+    {
+      "feature1": "C2",
+      "feature2": "C4",
+      "correlation": 0.8692412204498811
+    },
+    {
+      "feature1": "C2",
+      "feature2": "C14",
+      "correlation": 0.9057700742329353
+    },
+    {
+      "feature1": "C2",
+      "feature2": "C8",
+      "correlation": 0.8873625962068353
+    },
+    {
+      "feature1": "C2",
+      "feature2": "C10",
+      "correlation": 0.861711884089244
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V57",
+      "correlation": 0.9123759381055606
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V50",
+      "correlation": 0.9477039868810938
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V43",
+      "correlation": 0.862108534143835
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8112905570436483
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V58",
+      "correlation": 0.8614317735744921
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V21",
+      "correlation": 0.8800835483443596
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V42",
+      "correlation": 0.9030942956540444
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V52",
+      "correlation": 0.8391907317057895
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V33",
+      "correlation": 0.8932468143243629
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V34",
+      "correlation": 0.8405073075332292
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V39",
+      "correlation": 0.8273086017204542
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V51",
+      "correlation": 0.8985676422209881
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V59",
+      "correlation": 0.8249801039368508
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "V22",
+      "correlation": 0.8153511796686539
+    },
+    {
+      "feature1": "addr_missing_count",
+      "feature2": "addr1_is_missing",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "V57",
+      "feature2": "R_emaildomain_is_missing",
+      "correlation": 0.8821666054743422
+    },
+    {
+      "feature1": "V57",
+      "feature2": "addr2",
+      "correlation": 0.8660857261947474
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V50",
+      "correlation": 0.944054652754944
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V43",
+      "correlation": 0.8372117048949683
+    },
+    {
+      "feature1": "V57",
+      "feature2": "P_R_email_same",
+      "correlation": 0.9298205032676115
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V58",
+      "correlation": 0.9386383194210159
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V21",
+      "correlation": 0.8471574849108918
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V42",
+      "correlation": 0.8793358208144696
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V52",
+      "correlation": 0.8351523095876829
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V33",
+      "correlation": 0.8964781010945639
+    },
+    {
+      "feature1": "V57",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8770888131405642
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V34",
+      "correlation": 0.8466185460960043
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V39",
+      "correlation": 0.8128715552306202
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V51",
+      "correlation": 0.88961953999665
+    },
+    {
+      "feature1": "V57",
+      "feature2": "V59",
+      "correlation": 0.8257402450784475
+    },
+    {
+      "feature1": "V57",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.9123759381055606
+    },
+    {
+      "feature1": "C5",
+      "feature2": "C9",
+      "correlation": 0.9380524611422394
+    },
+    {
+      "feature1": "C5",
+      "feature2": "C13",
+      "correlation": 0.9366438167260603
+    },
+    {
+      "feature1": "V10",
+      "feature2": "V30",
+      "correlation": 0.841605378177698
+    },
+    {
+      "feature1": "V10",
+      "feature2": "V11",
+      "correlation": 0.9668811408410012
+    },
+    {
+      "feature1": "V10",
+      "feature2": "V49",
+      "correlation": 0.8676063405751817
+    },
+    {
+      "feature1": "V10",
+      "feature2": "V29",
+      "correlation": 0.8728736003173942
+    },
+    {
+      "feature1": "V10",
+      "feature2": "V48",
+      "correlation": 0.8925291661699633
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V50",
+      "correlation": 0.9904010977574005
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V43",
+      "correlation": 0.8727290469881137
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8440539113922905
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V58",
+      "correlation": 0.8324517662654243
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V21",
+      "correlation": 0.9173063738855551
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V42",
+      "correlation": 0.9172615890002426
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V52",
+      "correlation": 0.8319617699021665
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V33",
+      "correlation": 0.8581494087787196
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "ProductCD_W",
+      "correlation": 0.9626048687249074
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V34",
+      "correlation": 0.8091948708417469
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V39",
+      "correlation": 0.8391400190623628
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V51",
+      "correlation": 0.8909669112907085
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V59",
+      "correlation": 0.8448274697368551
+    },
+    {
+      "feature1": "R_emaildomain_is_missing",
+      "feature2": "V22",
+      "correlation": 0.8727536824917009
+    },
+    {
+      "feature1": "dist2_category",
+      "feature2": "dist2_is_missing",
+      "correlation": 0.8118508237914497
+    },
+    {
+      "feature1": "addr2",
+      "feature2": "V58",
+      "correlation": 0.8649535394636102
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "total_missing_features",
+      "correlation": 0.8937216271266221
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "M2_T",
+      "correlation": 0.8412657075514343
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "M3_is_missing",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "m_missing_count",
+      "correlation": 0.9141493264137867
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "M2_is_missing",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "M1_is_missing",
+      "feature2": "M1_T",
+      "correlation": 0.9998374161062583
+    },
+    {
+      "feature1": "V44",
+      "feature2": "V45",
+      "correlation": 0.8788005689038201
+    },
+    {
+      "feature1": "V23",
+      "feature2": "V24",
+      "correlation": 0.82550316581468
+    },
+    {
+      "feature1": "M3_T",
+      "feature2": "M2_T",
+      "correlation": 0.8596678674713859
+    },
+    {
+      "feature1": "card4_is_missing",
+      "feature2": "card_missing_count",
+      "correlation": 0.9498658659435508
+    },
+    {
+      "feature1": "card4_is_missing",
+      "feature2": "card3_is_missing",
+      "correlation": 0.9983924406288792
+    },
+    {
+      "feature1": "card4_is_missing",
+      "feature2": "card6_is_missing",
+      "correlation": 0.9977495048014987
+    },
+    {
+      "feature1": "V30",
+      "feature2": "V11",
+      "correlation": 0.850939560238652
+    },
+    {
+      "feature1": "V30",
+      "feature2": "V49",
+      "correlation": 0.8936641597525549
+    },
+    {
+      "feature1": "V30",
+      "feature2": "V29",
+      "correlation": 0.9572954204075629
+    },
+    {
+      "feature1": "V30",
+      "feature2": "V48",
+      "correlation": 0.8862989358435774
+    },
+    {
+      "feature1": "V50",
+      "feature2": "email_missing_count",
+      "correlation": 0.9743806332831288
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V43",
+      "correlation": 0.8715295380827232
+    },
+    {
+      "feature1": "V50",
+      "feature2": "P_R_email_same",
+      "correlation": 0.9795855091712228
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V58",
+      "correlation": 0.8882648458988199
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V21",
+      "correlation": 0.9400935620950447
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V42",
+      "correlation": 0.9151903876112024
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V52",
+      "correlation": 0.827775714530255
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V33",
+      "correlation": 0.9192393121349988
+    },
+    {
+      "feature1": "V50",
+      "feature2": "ProductCD_W",
+      "correlation": 0.9890912090033329
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V34",
+      "correlation": 0.8771015237271456
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V39",
+      "correlation": 0.8376563690589474
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V51",
+      "correlation": 0.886270633563743
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V59",
+      "correlation": 0.8693787936193523
+    },
+    {
+      "feature1": "V50",
+      "feature2": "V22",
+      "correlation": 0.9392846638731716
+    },
+    {
+      "feature1": "V50",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.9477039868810938
+    },
+    {
+      "feature1": "dist_sum",
+      "feature2": "dist1",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "dist_sum",
+      "feature2": "dist2",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "total_missing_features",
+      "feature2": "M3_is_missing",
+      "correlation": 0.8937216271266218
+    },
+    {
+      "feature1": "total_missing_features",
+      "feature2": "M2_is_missing",
+      "correlation": 0.8937216271266218
+    },
+    {
+      "feature1": "total_missing_features",
+      "feature2": "M1_T",
+      "correlation": 0.8936171465633508
+    },
+    {
+      "feature1": "C4",
+      "feature2": "C8",
+      "correlation": 0.974569887112383
+    },
+    {
+      "feature1": "C4",
+      "feature2": "C10",
+      "correlation": 0.9538197319493855
+    },
+    {
+      "feature1": "email_missing_count",
+      "feature2": "V43",
+      "correlation": 0.8586213894721634
+    },
+    {
+      "feature1": "email_missing_count",
+      "feature2": "V42",
+      "correlation": 0.9024351044707204
+    },
+    {
+      "feature1": "email_missing_count",
+      "feature2": "V52",
+      "correlation": 0.818770976098087
+    },
+    {
+      "feature1": "email_missing_count",
+      "feature2": "V39",
+      "correlation": 0.8255756577489166
+    },
+    {
+      "feature1": "email_missing_count",
+      "feature2": "V51",
+      "correlation": 0.8766226631556587
+    },
+    {
+      "feature1": "M2_T",
+      "feature2": "M3_is_missing",
+      "correlation": 0.8412657075514343
+    },
+    {
+      "feature1": "M2_T",
+      "feature2": "M2_is_missing",
+      "correlation": 0.8412657075514343
+    },
+    {
+      "feature1": "M2_T",
+      "feature2": "M1_T",
+      "correlation": 0.8413863856012946
+    },
+    {
+      "feature1": "C12",
+      "feature2": "C7",
+      "correlation": 0.9279211923498192
+    },
+    {
+      "feature1": "V38",
+      "feature2": "V37",
+      "correlation": 0.8385449840170028
+    },
+    {
+      "feature1": "D9",
+      "feature2": "trans_hour",
+      "correlation": 0.9999999999996124
+    },
+    {
+      "feature1": "V43",
+      "feature2": "P_R_email_same",
+      "correlation": 0.8656246672814513
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V21",
+      "correlation": 0.9012094999491924
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V42",
+      "correlation": 0.945442482129629
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V33",
+      "correlation": 0.8138287511429699
+    },
+    {
+      "feature1": "V43",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8735657351793489
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V39",
+      "correlation": 0.845258075534931
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V51",
+      "correlation": 0.8074933811095846
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V59",
+      "correlation": 0.849527077410272
+    },
+    {
+      "feature1": "V43",
+      "feature2": "V22",
+      "correlation": 0.8998509605559459
+    },
+    {
+      "feature1": "V43",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8621085341438349
+    },
+    {
+      "feature1": "V8",
+      "feature2": "V9",
+      "correlation": 0.8505757498592554
+    },
+    {
+      "feature1": "V26",
+      "feature2": "V25",
+      "correlation": 0.873825219664704
+    },
+    {
+      "feature1": "C9",
+      "feature2": "C13",
+      "correlation": 0.9261491864802094
+    },
+    {
+      "feature1": "M3_is_missing",
+      "feature2": "m_missing_count",
+      "correlation": 0.9141493264137867
+    },
+    {
+      "feature1": "M3_is_missing",
+      "feature2": "M2_is_missing",
+      "correlation": 1.0
+    },
+    {
+      "feature1": "M3_is_missing",
+      "feature2": "M1_T",
+      "correlation": 0.9998374161062583
+    },
+    {
+      "feature1": "card_missing_count",
+      "feature2": "card3_is_missing",
+      "correlation": 0.9506659228520086
+    },
+    {
+      "feature1": "card_missing_count",
+      "feature2": "card6_is_missing",
+      "correlation": 0.9507873402678199
+    },
+    {
+      "feature1": "card_missing_count",
+      "feature2": "card5_is_missing",
+      "correlation": 0.8574721154344982
+    },
+    {
+      "feature1": "V7",
+      "feature2": "V6",
+      "correlation": 0.8019349744354269
+    },
+    {
+      "feature1": "m_missing_count",
+      "feature2": "M2_is_missing",
+      "correlation": 0.9141493264137867
+    },
+    {
+      "feature1": "m_missing_count",
+      "feature2": "M1_T",
+      "correlation": 0.914128816633651
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V58",
+      "correlation": 0.8774140637831449
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V21",
+      "correlation": 0.8517391901860877
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V42",
+      "correlation": 0.9083392818994235
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V52",
+      "correlation": 0.8430447351336914
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V33",
+      "correlation": 0.9164655305796354
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8124904045725218
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V34",
+      "correlation": 0.8659516901191396
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V39",
+      "correlation": 0.8316552721125425
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "V51",
+      "correlation": 0.9026300824924068
+    },
+    {
+      "feature1": "P_R_email_same",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8112905570436483
+    },
+    {
+      "feature1": "V11",
+      "feature2": "V49",
+      "correlation": 0.8642417903201886
+    },
+    {
+      "feature1": "V11",
+      "feature2": "V29",
+      "correlation": 0.8535140978816577
+    },
+    {
+      "feature1": "V11",
+      "feature2": "V48",
+      "correlation": 0.8690221735136474
+    },
+    {
+      "feature1": "C8",
+      "feature2": "C10",
+      "correlation": 0.9608384819176793
+    },
+    {
+      "feature1": "V58",
+      "feature2": "V21",
+      "correlation": 0.8012885763197136
+    },
+    {
+      "feature1": "V58",
+      "feature2": "V42",
+      "correlation": 0.8328421791335271
+    },
+    {
+      "feature1": "V58",
+      "feature2": "V33",
+      "correlation": 0.8455110255152669
+    },
+    {
+      "feature1": "V58",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8272158959461176
+    },
+    {
+      "feature1": "V58",
+      "feature2": "V51",
+      "correlation": 0.8369152038406953
+    },
+    {
+      "feature1": "V58",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.861431773574492
+    },
+    {
+      "feature1": "V21",
+      "feature2": "V42",
+      "correlation": 0.9489145542722973
+    },
+    {
+      "feature1": "V21",
+      "feature2": "ProductCD_W",
+      "correlation": 0.9453086732937804
+    },
+    {
+      "feature1": "V21",
+      "feature2": "V39",
+      "correlation": 0.863217162955875
+    },
+    {
+      "feature1": "V21",
+      "feature2": "V51",
+      "correlation": 0.8510839880578976
+    },
+    {
+      "feature1": "V21",
+      "feature2": "V59",
+      "correlation": 0.9089358645129316
+    },
+    {
+      "feature1": "V21",
+      "feature2": "V22",
+      "correlation": 0.9508911625071557
+    },
+    {
+      "feature1": "V21",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8800835483443599
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V33",
+      "correlation": 0.8543252954680904
+    },
+    {
+      "feature1": "V42",
+      "feature2": "ProductCD_W",
+      "correlation": 0.9183620712876869
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V34",
+      "correlation": 0.8125025797952817
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V39",
+      "correlation": 0.8921883955199804
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V51",
+      "correlation": 0.8457107197518273
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V59",
+      "correlation": 0.8955462903161835
+    },
+    {
+      "feature1": "V42",
+      "feature2": "V22",
+      "correlation": 0.9468446107285527
+    },
+    {
+      "feature1": "V42",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.9030942956540444
+    },
+    {
+      "feature1": "V52",
+      "feature2": "V33",
+      "correlation": 0.8734506959713515
+    },
+    {
+      "feature1": "V52",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8306388027091797
+    },
+    {
+      "feature1": "V52",
+      "feature2": "V34",
+      "correlation": 0.8761612209360891
+    },
+    {
+      "feature1": "V52",
+      "feature2": "V51",
+      "correlation": 0.9331182810722349
+    },
+    {
+      "feature1": "V52",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8391907317057895
+    },
+    {
+      "feature1": "V33",
+      "feature2": "ProductCD_W",
+      "correlation": 0.8374008931243546
+    },
+    {
+      "feature1": "V33",
+      "feature2": "V34",
+      "correlation": 0.9448614369281356
+    },
+    {
+      "feature1": "V33",
+      "feature2": "V51",
+      "correlation": 0.9360370997129251
+    },
+    {
+      "feature1": "V33",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8932468143243629
+    },
+    {
+      "feature1": "ProductCD_W",
+      "feature2": "V39",
+      "correlation": 0.8400145545722211
+    },
+    {
+      "feature1": "ProductCD_W",
+      "feature2": "V51",
+      "correlation": 0.8895748505699622
+    },
+    {
+      "feature1": "ProductCD_W",
+      "feature2": "V59",
+      "correlation": 0.8707328380641455
+    },
+    {
+      "feature1": "ProductCD_W",
+      "feature2": "V22",
+      "correlation": 0.8984376533312648
+    },
+    {
+      "feature1": "card3_is_missing",
+      "feature2": "card6_is_missing",
+      "correlation": 0.9993560517581833
+    },
+    {
+      "feature1": "dist_missing_count",
+      "feature2": "dist1_is_missing",
+      "correlation": 0.9128572247841146
+    },
+    {
+      "feature1": "V34",
+      "feature2": "V51",
+      "correlation": 0.8993376004166483
+    },
+    {
+      "feature1": "V34",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8405073075332291
+    },
+    {
+      "feature1": "V39",
+      "feature2": "V59",
+      "correlation": 0.9024475530190131
+    },
+    {
+      "feature1": "V39",
+      "feature2": "V22",
+      "correlation": 0.8613445968730896
+    },
+    {
+      "feature1": "V39",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8273086017204542
+    },
+    {
+      "feature1": "V51",
+      "feature2": "V59",
+      "correlation": 0.8058442304698541
+    },
+    {
+      "feature1": "V51",
+      "feature2": "V22",
+      "correlation": 0.8489949183669986
+    },
+    {
+      "feature1": "V51",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.898567642220988
+    },
+    {
+      "feature1": "V59",
+      "feature2": "V22",
+      "correlation": 0.8659977914117333
+    },
+    {
+      "feature1": "V59",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8249801039368508
+    },
+    {
+      "feature1": "M2_is_missing",
+      "feature2": "M1_T",
+      "correlation": 0.9998374161062583
+    },
+    {
+      "feature1": "V22",
+      "feature2": "addr1_is_missing",
+      "correlation": 0.8153511796686539
+    },
+    {
+      "feature1": "V49",
+      "feature2": "V29",
+      "correlation": 0.8892408754937362
+    },
+    {
+      "feature1": "V49",
+      "feature2": "V48",
+      "correlation": 0.9678131583062183
+    },
+    {
+      "feature1": "V29",
+      "feature2": "V48",
+      "correlation": 0.9144293671864588
+    }
+  ],
+  "target_correlations": {
+    "V16": 0.1914000855214255,
+    "V36": 0.0899165101610678,
+    "card2": 0.001393254981975019,
+    "addr2_is_missing": 0.17686718100142287,
+    "V13": 0.06144839115610518,
+    "card6_debit": 0.10554311784878781,
+    "V20": 0.034192738321701,
+    "V40": 0.2372839144180988,
+    "V19": 0.02730776243855549,
+    "V47": 0.1572156129611574,
+    "addr1": 0.01580970853181996,
+    "V28": 0.004604830802838167,
+    "V5": 0.02425962672620524,
+    "amount_log": 0.0004828271379166717,
+    "D2": 0.08486704910286448,
+    "V54": 0.05337037577526552,
+    "V24_V38_product": 0.25258033692951126,
+    "P_emaildomain_gmail_com": 0.03230232646033985,
+    "D4": 0.06961934905803051,
+    "ProductCD_C": 0.17581916277107404,
+    "dist1_is_zero": 0.017190274949955123,
+    "card4_visa": 0.005869633142470789,
+    "is_round_amount": 0.00581951028614041,
+    "D3": 0.04772758578226218,
+    "V18": 0.1943849342349175,
+    "V35": 0.09319732864149677,
+    "card2_is_missing": 0.010358847242579445,
+    "C2": 0.07362964512858163,
+    "card3": 0.1689217079058923,
+    "addr_missing_count": 0.17686718100142287,
+    "V57": 0.18368583054291374,
+    "V53": 0.06123696962819207,
+    "V46": 0.12637314970014824,
+    "is_small_amount": 0.027401525129551595,
+    "C5": 0.031137922006334164,
+    "V10": 0.07246204429701576,
+    "R_emaildomain_is_missing": 0.16716449686436838,
+    "dist2_category": 0.08989952670756914,
+    "addr2": 0.01906114403755167,
+    "D14": 0.03517697934920604,
+    "M1_is_missing": 0.13381493683377044,
+    "P_emaildomain_hotmail_com": 0.025545158321619264,
+    "is_night": 0.008095010895503494,
+    "V56": 0.061801486602545024,
+    "V44": 0.27924646956097443,
+    "D11": 0.04737589123860282,
+    "V23": 0.14667365487103212,
+    "M3_T": 0.1099850438723734,
+    "card4_is_missing": 0.004751317557801503,
+    "card4_mastercard": 0.013326752977788583,
+    "V30": 0.1005753495945396,
+    "V50": 0.20404484480102447,
+    "R_emaildomain_hotmail_com": 0.05453187162989238,
+    "dist_sum": 0.0092739236337328,
+    "total_missing_features": 0.1323489006632126,
+    "dist1_category": 0.05993112263342214,
+    "C4": 0.042343331309554276,
+    "email_missing_count": 0.12233972393438186,
+    "M2_T": 0.12332655231797063,
+    "C12": 0.22672667199502797,
+    "V38": 0.21649850724561295,
+    "d_missing_count": 0.07793311475180065,
+    "D9": 0.04219735215467201,
+    "V43": 0.2222464394428364,
+    "V3": 0.03704719825355701,
+    "C14": 0.005217966724243068,
+    "V8": 0.018068659967768384,
+    "is_amount_extreme_high": 0.0022651420594943647,
+    "V2": 0.015707968341441312,
+    "V26": 0.006967274868476708,
+    "card5": 0.027429732287980076,
+    "D8": 0.1571783971165275,
+    "C9": 0.03264901168310721,
+    "M3_is_missing": 0.13381493683377044,
+    "card_missing_count": 0.0051558320643991,
+    "V7": 0.016694311984282787,
+    "TransactionAmt": 0.019111102401761473,
+    "m_missing_count": 0.11222360133947207,
+    "V37": 0.20337898142196364,
+    "dist1": 0.021239800583535105,
+    "P_R_email_same": 0.1762028483637413,
+    "P_emaildomain_is_missing": 0.007878638844680822,
+    "V11": 0.06938946495310945,
+    "C3": 0.005534052508491048,
+    "P_emaildomain_yahoo_com": 0.03237636174397485,
+    "C8": 0.09509556447481042,
+    "V9": 0.03262133731034116,
+    "V55": 0.06548720596477378,
+    "V58": 0.17970195702026373,
+    "C10": 0.06959267107546549,
+    "dt_per_amt": 0.02663258846879424,
+    "V21": 0.18076912641123435,
+    "V42": 0.2179469022740059,
+    "V52": 0.2510386234176372,
+    "V33": 0.19462586623251293,
+    "V27": 0.004759557037473616,
+    "ProductCD_W": 0.16859485972865706,
+    "card3_is_missing": 0.004967753197386414,
+    "v_missing_count": 0.0798123341147802,
+    "D10": 0.0774220775369843,
+    "R_emaildomain_gmail_com": 0.1800887594034511,
+    "D7": 0.11120695513389822,
+    "dist_missing_count": 0.02904773890739159,
+    "card1": 0.010856984900029665,
+    "V14": 0.0029467509111748788,
+    "V45": 0.2936077652254702,
+    "V34": 0.191031118461442,
+    "hour_sin": 0.03828735392794427,
+    "V39": 0.23345493477053925,
+    "V51": 0.23904539015074966,
+    "R_emaildomain_anonymous_com": 0.0062369456611589755,
+    "V59": 0.1664897874047111,
+    "V25": 0.0020805689907208145,
+    "C7": 0.20791650179658464,
+    "V12": 0.06613251930025621,
+    "is_rare_hour": 0.02642376035319582,
+    "card6_is_missing": 0.004983044418450384,
+    "V4": 0.008079459467906353,
+    "dist2_is_missing": 0.10231888061137087,
+    "M2_is_missing": 0.13381493683377044,
+    "V22": 0.16681384879773842,
+    "amount_rank": 0.003905976719844794,
+    "v_mean": 0.19944042970317247,
+    "V24": 0.11732073721687578,
+    "V49": 0.11192296497936641,
+    "D15": 0.08214300616230118,
+    "ProductCD_R": 0.018216915263564722,
+    "V29": 0.10671751381563158,
+    "trans_weekday": 0.004746330325861457,
+    "dist2_is_zero": 0.06735120100158784,
+    "v_profile_cluster": 0.04490181736017674,
+    "addr1_is_missing": 0.17686718100142287,
+    "D13": 0.07254584862310394,
+    "card6_credit": 0.10741220304990161,
+    "dist2": 0.01918524017562661,
+    "dist1_is_missing": 0.07221518322635359,
+    "D6": 0.074452661798483,
+    "M1_T": 0.13377719444788017,
+    "C13": 0.030447364065430502,
+    "V6": 0.008835770416518382,
+    "V48": 0.11740265786656721,
+    "card5_is_missing": 0.003395946894152522,
+    "trans_hour": 0.016283814892918715
+  },
+  "correlation_summary": {
+    "total_features": 163,
+    "high_corr_pairs_count": 282,
+    "correlation_threshold": 0.8
+  },
+  "graph_construction_insights": {
+    "node_attributes": {
+      "priority_features": [
+        "V45",
+        "V44",
+        "V24_V38_product",
+        "V52",
+        "V51"
+      ],
+      "feature_weights": {
+        "V45": 0.2936077652254702,
+        "V44": 0.27924646956097443,
+        "V24_V38_product": 0.25258033692951126,
+        "V52": 0.2510386234176372,
+        "V51": 0.23904539015074966,
+        "V40": 0.2372839144180988,
+        "V39": 0.23345493477053925,
+        "C12": 0.22672667199502797,
+        "V43": 0.2222464394428364,
+        "V42": 0.2179469022740059
+      }
+    },
+    "edge_construction": {
+      "similarity_features": [
+        "V16",
+        "addr_missing_count",
+        "V57",
+        "addr2_is_missing",
+        "V18",
+        "ProductCD_C"
+      ],
+      "correlation_threshold": 0.8,
+      "recommended_similarity_metrics": [
+        "cosine",
+        "correlation"
+      ]
+    },
+    "subgraph_analysis": {
+      "high_correlation_clusters": [
+        {
+          "feature1": "V16",
+          "feature2": "addr2_is_missing",
+          "correlation": 0.9462453343912273
+        },
+        {
+          "feature1": "V16",
+          "feature2": "ProductCD_C",
+          "correlation": 0.9650260339393337
+        },
+        {
+          "feature1": "V16",
+          "feature2": "addr_missing_count",
+          "correlation": 0.9462453343912273
+        },
+        {
+          "feature1": "V16",
+          "feature2": "V57",
+          "correlation": 0.9549848111667825
+        },
+        {
+          "feature1": "V16",
+          "feature2": "R_emaildomain_is_missing",
+          "correlation": 0.9142378623492163
+        },
+        {
+          "feature1": "V16",
+          "feature2": "V50",
+          "correlation": 0.9705856767646405
+        },
+        {
+          "feature1": "V16",
+          "feature2": "P_R_email_same",
+          "correlation": 0.9742939257512206
+        },
+        {
+          "feature1": "V16",
+          "feature2": "V58",
+          "correlation": 0.9006221320676815
+        },
+        {
+          "feature1": "V16",
+          "feature2": "V33",
+          "correlation": 0.9334760858399285
+        },
+        {
+          "feature1": "V16",
+          "feature2": "V51",
+          "correlation": 0.912126469335598
+        },
+        {
+          "feature1": "V16",
+          "feature2": "addr1_is_missing",
+          "correlation": 0.9462453343912273
+        },
+        {
+          "feature1": "V36",
+          "feature2": "V35",
+          "correlation": 0.9282548286571752
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "ProductCD_C",
+          "correlation": 0.9776820449802169
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "addr_missing_count",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "V57",
+          "correlation": 0.9123759381055606
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "V50",
+          "correlation": 0.9477039868810938
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "V42",
+          "correlation": 0.9030942956540444
+        },
+        {
+          "feature1": "addr2_is_missing",
+          "feature2": "addr1_is_missing",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "V13",
+          "feature2": "V12",
+          "correlation": 0.9219229208533896
+        },
+        {
+          "feature1": "card6_debit",
+          "feature2": "card6_credit",
+          "correlation": 0.9840192698715053
+        },
+        {
+          "feature1": "V20",
+          "feature2": "V19",
+          "correlation": 0.9163345505055455
+        },
+        {
+          "feature1": "V40",
+          "feature2": "V39",
+          "correlation": 0.929152979311444
+        },
+        {
+          "feature1": "V28",
+          "feature2": "V27",
+          "correlation": 0.9581712260704356
+        },
+        {
+          "feature1": "V5",
+          "feature2": "V4",
+          "correlation": 0.9162089676996433
+        },
+        {
+          "feature1": "amount_log",
+          "feature2": "amount_rank",
+          "correlation": 0.9515498463186406
+        },
+        {
+          "feature1": "V54",
+          "feature2": "V53",
+          "correlation": 0.9187033757556926
+        },
+        {
+          "feature1": "D4",
+          "feature2": "D6",
+          "correlation": 0.9664872913380343
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "addr_missing_count",
+          "correlation": 0.9776820449802169
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "V57",
+          "correlation": 0.9305519010923552
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "V50",
+          "correlation": 0.9670032136305632
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "V33",
+          "correlation": 0.9073692136361932
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "V51",
+          "correlation": 0.9173536201788269
+        },
+        {
+          "feature1": "ProductCD_C",
+          "feature2": "addr1_is_missing",
+          "correlation": 0.9776820449802169
+        },
+        {
+          "feature1": "card4_visa",
+          "feature2": "card4_mastercard",
+          "correlation": 0.9479275685396431
+        },
+        {
+          "feature1": "V18",
+          "feature2": "V50",
+          "correlation": 0.902351125907935
+        },
+        {
+          "feature1": "V18",
+          "feature2": "V21",
+          "correlation": 0.9543967037439901
+        },
+        {
+          "feature1": "V18",
+          "feature2": "V42",
+          "correlation": 0.909013252327145
+        },
+        {
+          "feature1": "V18",
+          "feature2": "ProductCD_W",
+          "correlation": 0.9097817432612697
+        },
+        {
+          "feature1": "V18",
+          "feature2": "V22",
+          "correlation": 0.9160482448368023
+        },
+        {
+          "feature1": "C2",
+          "feature2": "C14",
+          "correlation": 0.9057700742329353
+        },
+        {
+          "feature1": "addr_missing_count",
+          "feature2": "V57",
+          "correlation": 0.9123759381055606
+        },
+        {
+          "feature1": "addr_missing_count",
+          "feature2": "V50",
+          "correlation": 0.9477039868810938
+        },
+        {
+          "feature1": "addr_missing_count",
+          "feature2": "V42",
+          "correlation": 0.9030942956540444
+        },
+        {
+          "feature1": "addr_missing_count",
+          "feature2": "addr1_is_missing",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "V57",
+          "feature2": "V50",
+          "correlation": 0.944054652754944
+        },
+        {
+          "feature1": "V57",
+          "feature2": "P_R_email_same",
+          "correlation": 0.9298205032676115
+        },
+        {
+          "feature1": "V57",
+          "feature2": "V58",
+          "correlation": 0.9386383194210159
+        },
+        {
+          "feature1": "V57",
+          "feature2": "addr1_is_missing",
+          "correlation": 0.9123759381055606
+        },
+        {
+          "feature1": "C5",
+          "feature2": "C9",
+          "correlation": 0.9380524611422394
+        },
+        {
+          "feature1": "C5",
+          "feature2": "C13",
+          "correlation": 0.9366438167260603
+        },
+        {
+          "feature1": "V10",
+          "feature2": "V11",
+          "correlation": 0.9668811408410012
+        },
+        {
+          "feature1": "R_emaildomain_is_missing",
+          "feature2": "V50",
+          "correlation": 0.9904010977574005
+        },
+        {
+          "feature1": "R_emaildomain_is_missing",
+          "feature2": "V21",
+          "correlation": 0.9173063738855551
+        },
+        {
+          "feature1": "R_emaildomain_is_missing",
+          "feature2": "V42",
+          "correlation": 0.9172615890002426
+        },
+        {
+          "feature1": "R_emaildomain_is_missing",
+          "feature2": "ProductCD_W",
+          "correlation": 0.9626048687249074
+        },
+        {
+          "feature1": "M1_is_missing",
+          "feature2": "M3_is_missing",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "M1_is_missing",
+          "feature2": "m_missing_count",
+          "correlation": 0.9141493264137867
+        },
+        {
+          "feature1": "M1_is_missing",
+          "feature2": "M2_is_missing",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "M1_is_missing",
+          "feature2": "M1_T",
+          "correlation": 0.9998374161062583
+        },
+        {
+          "feature1": "card4_is_missing",
+          "feature2": "card_missing_count",
+          "correlation": 0.9498658659435508
+        },
+        {
+          "feature1": "card4_is_missing",
+          "feature2": "card3_is_missing",
+          "correlation": 0.9983924406288792
+        },
+        {
+          "feature1": "card4_is_missing",
+          "feature2": "card6_is_missing",
+          "correlation": 0.9977495048014987
+        },
+        {
+          "feature1": "V30",
+          "feature2": "V29",
+          "correlation": 0.9572954204075629
+        },
+        {
+          "feature1": "V50",
+          "feature2": "email_missing_count",
+          "correlation": 0.9743806332831288
+        },
+        {
+          "feature1": "V50",
+          "feature2": "P_R_email_same",
+          "correlation": 0.9795855091712228
+        },
+        {
+          "feature1": "V50",
+          "feature2": "V21",
+          "correlation": 0.9400935620950447
+        },
+        {
+          "feature1": "V50",
+          "feature2": "V42",
+          "correlation": 0.9151903876112024
+        },
+        {
+          "feature1": "V50",
+          "feature2": "V33",
+          "correlation": 0.9192393121349988
+        },
+        {
+          "feature1": "V50",
+          "feature2": "ProductCD_W",
+          "correlation": 0.9890912090033329
+        },
+        {
+          "feature1": "V50",
+          "feature2": "V22",
+          "correlation": 0.9392846638731716
+        },
+        {
+          "feature1": "V50",
+          "feature2": "addr1_is_missing",
+          "correlation": 0.9477039868810938
+        },
+        {
+          "feature1": "dist_sum",
+          "feature2": "dist1",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "dist_sum",
+          "feature2": "dist2",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "C4",
+          "feature2": "C8",
+          "correlation": 0.974569887112383
+        },
+        {
+          "feature1": "C4",
+          "feature2": "C10",
+          "correlation": 0.9538197319493855
+        },
+        {
+          "feature1": "email_missing_count",
+          "feature2": "V42",
+          "correlation": 0.9024351044707204
+        },
+        {
+          "feature1": "C12",
+          "feature2": "C7",
+          "correlation": 0.9279211923498192
+        },
+        {
+          "feature1": "D9",
+          "feature2": "trans_hour",
+          "correlation": 0.9999999999996124
+        },
+        {
+          "feature1": "V43",
+          "feature2": "V21",
+          "correlation": 0.9012094999491924
+        },
+        {
+          "feature1": "V43",
+          "feature2": "V42",
+          "correlation": 0.945442482129629
+        },
+        {
+          "feature1": "C9",
+          "feature2": "C13",
+          "correlation": 0.9261491864802094
+        },
+        {
+          "feature1": "M3_is_missing",
+          "feature2": "m_missing_count",
+          "correlation": 0.9141493264137867
+        },
+        {
+          "feature1": "M3_is_missing",
+          "feature2": "M2_is_missing",
+          "correlation": 1.0
+        },
+        {
+          "feature1": "M3_is_missing",
+          "feature2": "M1_T",
+          "correlation": 0.9998374161062583
+        },
+        {
+          "feature1": "card_missing_count",
+          "feature2": "card3_is_missing",
+          "correlation": 0.9506659228520086
+        },
+        {
+          "feature1": "card_missing_count",
+          "feature2": "card6_is_missing",
+          "correlation": 0.9507873402678199
+        },
+        {
+          "feature1": "m_missing_count",
+          "feature2": "M2_is_missing",
+          "correlation": 0.9141493264137867
+        },
+        {
+          "feature1": "m_missing_count",
+          "feature2": "M1_T",
+          "correlation": 0.914128816633651
+        },
+        {
+          "feature1": "P_R_email_same",
+          "feature2": "V42",
+          "correlation": 0.9083392818994235
+        },
+        {
+          "feature1": "P_R_email_same",
+          "feature2": "V33",
+          "correlation": 0.9164655305796354
+        },
+        {
+          "feature1": "P_R_email_same",
+          "feature2": "V51",
+          "correlation": 0.9026300824924068
+        },
+        {
+          "feature1": "C8",
+          "feature2": "C10",
+          "correlation": 0.9608384819176793
+        },
+        {
+          "feature1": "V21",
+          "feature2": "V42",
+          "correlation": 0.9489145542722973
+        },
+        {
+          "feature1": "V21",
+          "feature2": "ProductCD_W",
+          "correlation": 0.9453086732937804
+        },
+        {
+          "feature1": "V21",
+          "feature2": "V59",
+          "correlation": 0.9089358645129316
+        },
+        {
+          "feature1": "V21",
+          "feature2": "V22",
+          "correlation": 0.9508911625071557
+        },
+        {
+          "feature1": "V42",
+          "feature2": "ProductCD_W",
+          "correlation": 0.9183620712876869
+        },
+        {
+          "feature1": "V42",
+          "feature2": "V22",
+          "correlation": 0.9468446107285527
+        },
+        {
+          "feature1": "V42",
+          "feature2": "addr1_is_missing",
+          "correlation": 0.9030942956540444
+        },
+        {
+          "feature1": "V52",
+          "feature2": "V51",
+          "correlation": 0.9331182810722349
+        },
+        {
+          "feature1": "V33",
+          "feature2": "V34",
+          "correlation": 0.9448614369281356
+        },
+        {
+          "feature1": "V33",
+          "feature2": "V51",
+          "correlation": 0.9360370997129251
+        },
+        {
+          "feature1": "card3_is_missing",
+          "feature2": "card6_is_missing",
+          "correlation": 0.9993560517581833
+        },
+        {
+          "feature1": "dist_missing_count",
+          "feature2": "dist1_is_missing",
+          "correlation": 0.9128572247841146
+        },
+        {
+          "feature1": "V39",
+          "feature2": "V59",
+          "correlation": 0.9024475530190131
+        },
+        {
+          "feature1": "M2_is_missing",
+          "feature2": "M1_T",
+          "correlation": 0.9998374161062583
+        },
+        {
+          "feature1": "V49",
+          "feature2": "V48",
+          "correlation": 0.9678131583062183
+        },
+        {
+          "feature1": "V29",
+          "feature2": "V48",
+          "correlation": 0.9144293671864588
+        }
+      ]
+    }
+  }
+}

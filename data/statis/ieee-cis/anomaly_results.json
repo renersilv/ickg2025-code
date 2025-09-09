@@ -1,0 +1,35 @@
+{
+  "anomaly_scores_file": "anomaly_scores.csv",
+  "n_anomalies": 14200,
+  "anomaly_fraud_rate": 0.20056338028169013,
+  "contamination": 0.05,
+  "top_anomaly_threshold": 3.133194298343689e-06,
+  "graph_construction_insights": {
+    "node_attributes": {
+      "key_anomaly_features": [
+        "dist2_is_missing",
+        "dist2_category",
+        "V43",
+        "addr2",
+        "ProductCD_C",
+        "addr2_is_missing",
+        "addr_missing_count",
+        "addr1_is_missing"
+      ],
+      "anomaly_score": "anomaly_score"
+    },
+    "edge_construction": {
+      "anomaly_based_edges": {
+        "anomaly_similarity_threshold": 0.7,
+        "normal_similarity_threshold": 0.5,
+        "anomaly_boost_factor": 2.0
+      }
+    },
+    "subgraph_analysis": {
+      "anomaly_clusters": {
+        "high_anomaly_threshold": 0.05327935234695283,
+        "anomaly_fraud_correlation": 0.20056338028169013
+      }
+    }
+  }
+}

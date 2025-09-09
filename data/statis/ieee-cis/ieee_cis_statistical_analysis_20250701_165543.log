@@ -1,0 +1,128 @@
+2025-07-01 16:55:43,321 - IEEECISStatisticalAnalysis - INFO - === Iniciando Análises Estatísticas Modulares para IEEE-CIS ===
+2025-07-01 16:55:43,321 - IEEECISStatisticalAnalysis - INFO - === ENVIRONMENT INFORMATION ===
+2025-07-01 16:55:43,321 - IEEECISStatisticalAnalysis - INFO - Python version: 3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]
+2025-07-01 16:55:43,322 - IEEECISStatisticalAnalysis - INFO - Platform: Linux-6.8.0-1030-aws-x86_64-with-glibc2.39
+2025-07-01 16:55:43,322 - IEEECISStatisticalAnalysis - INFO - Random seed: 42
+2025-07-01 16:55:43,416 - IEEECISStatisticalAnalysis - INFO - NumPy version: 2.2.6
+2025-07-01 16:55:43,416 - IEEECISStatisticalAnalysis - INFO - Pandas version: 2.2.3
+2025-07-01 16:55:43,416 - IEEECISStatisticalAnalysis - INFO - Scikit-learn version: 1.6.1
+2025-07-01 16:55:43,416 - IEEECISStatisticalAnalysis - INFO - NetworkX version: 3.5
+2025-07-01 16:55:43,416 - IEEECISStatisticalAnalysis - INFO - ================================
+2025-07-01 16:55:43,471 - IEEECISStatisticalAnalysis - INFO - Initial memory usage: 200.4 MB RSS, 0.6%
+2025-07-01 16:55:43,471 - IEEECISStatisticalAnalysis - INFO - Carregando dados de data/parquet/ieee-cis/ieee-cis.parquet
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO - Dataset carregado: (284000, 165) | Taxa de fraude: 0.0362
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO - === Configuração de Features ===
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO - Total de features disponíveis para análise: 164
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO - Features por categoria:
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO -   - v_features: 53 features
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO -   - v_derived_features: 4 features
+2025-07-01 16:55:45,678 - IEEECISStatisticalAnalysis - INFO -   - amount_features: 7 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - temporal_features: 7 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - card_features: 18 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - address_features: 6 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - distance_features: 10 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - email_features: 12 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - c_features: 11 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - c_derived_features: 1 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - d_features: 12 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - d_derived_features: 1 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - m_features: 9 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - m_derived_features: 7 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - product_features: 5 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO -   - aggregation_features: 1 features
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO - Features excluídas: ['isFraud']
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO - === Iniciando Análises ===
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO - Executando análises estatísticas modulares...
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO - --- 1. Análise de Correlação ---
+2025-07-01 16:55:45,679 - IEEECISStatisticalAnalysis - INFO - Starting correlation analysis...
+2025-07-01 16:55:45,680 - IEEECISStatisticalAnalysis - INFO - Analyzing correlations for 163 features (from 163 expected)
+2025-07-01 16:55:45,957 - IEEECISStatisticalAnalysis - INFO - Filtering to 147 numeric columns for correlation analysis
+2025-07-01 16:55:46,087 - IEEECISStatisticalAnalysis - INFO - Checking for constant features...
+2025-07-01 16:55:46,094 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature: c_missing_count
+2025-07-01 16:55:46,202 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature: product_is_missing
+2025-07-01 16:55:46,424 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature: addr1_addr2_same
+2025-07-01 16:55:46,609 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature: card1_is_missing
+2025-07-01 16:55:46,741 - IEEECISStatisticalAnalysis - INFO - Kept 143 non-constant features for correlation analysis
+2025-07-01 16:55:46,865 - IEEECISStatisticalAnalysis - INFO - Calculating correlation matrix...
+2025-07-01 16:56:01,290 - IEEECISStatisticalAnalysis - INFO - Finding high correlation pairs (threshold: 0.8)...
+2025-07-01 16:56:01,489 - IEEECISStatisticalAnalysis - INFO - Calculating correlations with target variable...
+2025-07-01 16:56:02,107 - IEEECISStatisticalAnalysis - INFO - Saved correlation matrix to data/statis/ieee-cis/correlation_analysis/correlation_matrix.csv
+2025-07-01 16:56:02,109 - IEEECISStatisticalAnalysis - INFO - Saved target correlations to data/statis/ieee-cis/correlation_analysis/target_correlations.csv
+2025-07-01 16:56:02,111 - IEEECISStatisticalAnalysis - INFO - Saved high correlation pairs to data/statis/ieee-cis/correlation_analysis/high_correlation_pairs.csv
+2025-07-01 16:56:02,111 - IEEECISStatisticalAnalysis - INFO - Correlation analysis completed: 282 high correlation pairs found
+2025-07-01 16:56:02,111 - IEEECISStatisticalAnalysis - INFO - Top features correlated with fraud: ['V45', 'V44', 'V24_V38_product', 'V52', 'V51']
+2025-07-01 16:56:02,119 - IEEECISStatisticalAnalysis - INFO - --- 2. Análise PCA ---
+2025-07-01 16:56:02,119 - IEEECISStatisticalAnalysis - INFO - Starting PCA analysis...
+2025-07-01 16:56:02,119 - IEEECISStatisticalAnalysis - INFO - Using 163 continuous features for PCA (from 163 expected)
+2025-07-01 16:56:02,119 - IEEECISStatisticalAnalysis - INFO - Preparing data for PCA...
+2025-07-01 16:56:02,416 - IEEECISStatisticalAnalysis - INFO - Filtering to 147 numeric columns for PCA analysis
+2025-07-01 16:56:02,712 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature for PCA: c_missing_count
+2025-07-01 16:56:02,790 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature for PCA: product_is_missing
+2025-07-01 16:56:02,955 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature for PCA: addr1_addr2_same
+2025-07-01 16:56:03,091 - IEEECISStatisticalAnalysis - WARNING - Removing constant/near-constant numeric feature for PCA: card1_is_missing
+2025-07-01 16:56:03,312 - IEEECISStatisticalAnalysis - INFO - Using 143 non-constant features for PCA
+2025-07-01 16:56:03,312 - IEEECISStatisticalAnalysis - INFO - Standardizing features for PCA...
+2025-07-01 16:56:04,031 - IEEECISStatisticalAnalysis - INFO - Applying PCA with 10 components...
+2025-07-01 16:56:04,237 - IEEECISStatisticalAnalysis - INFO - Saved PCA components to data/statis/ieee-cis/pca_analysis/pca_components.csv
+2025-07-01 16:56:04,238 - IEEECISStatisticalAnalysis - INFO - Saved explained variance to data/statis/ieee-cis/pca_analysis/explained_variance.csv
+2025-07-01 16:56:04,473 - IEEECISStatisticalAnalysis - INFO - Saved PCA transformed data sample to data/statis/ieee-cis/pca_analysis/pca_transformed_sample.csv
+2025-07-01 16:56:04,527 - IEEECISStatisticalAnalysis - INFO - PCA analysis completed: 10 components explain 59.93% of variance
+2025-07-01 16:56:04,527 - IEEECISStatisticalAnalysis - INFO - Priority features identified: ['C2', 'V14', 'hour_sin', 'V46', 'card_missing_count', 'R_emaildomain_is_missing', 'TransactionAmt', 'is_rare_hour']
+2025-07-01 16:56:04,536 - IEEECISStatisticalAnalysis - INFO - --- 3. Análise de Clustering ---
+2025-07-01 16:56:04,537 - IEEECISStatisticalAnalysis - INFO - Starting cluster analysis...
+2025-07-01 16:56:04,537 - IEEECISStatisticalAnalysis - INFO - Using 163 features for clustering (from 163 expected)
+2025-07-01 16:56:04,537 - IEEECISStatisticalAnalysis - INFO - Preparing data for clustering...
+2025-07-01 16:56:04,834 - IEEECISStatisticalAnalysis - INFO - Filtering to 147 numeric columns for clustering analysis
+2025-07-01 16:56:05,129 - IEEECISStatisticalAnalysis - INFO - Standardizing features for clustering...
+2025-07-01 16:56:05,870 - IEEECISStatisticalAnalysis - INFO - Applying K-Means with 5 clusters...
+2025-07-01 16:56:09,311 - IEEECISStatisticalAnalysis - INFO - Calculating cluster quality metrics...
+2025-07-01 16:56:09,311 - IEEECISStatisticalAnalysis - INFO - Large dataset detected - using sampling for quality metrics
+2025-07-01 16:56:10,491 - IEEECISStatisticalAnalysis - INFO - Cluster quality metrics:
+2025-07-01 16:56:10,491 - IEEECISStatisticalAnalysis - INFO -   - Silhouette Score: 0.1575
+2025-07-01 16:56:10,492 - IEEECISStatisticalAnalysis - INFO -   - Calinski-Harabasz Score: 1470.58
+2025-07-01 16:56:10,492 - IEEECISStatisticalAnalysis - INFO -   - Davies-Bouldin Score: 1.8877
+2025-07-01 16:56:10,785 - IEEECISStatisticalAnalysis - INFO - Saved cluster assignments to data/statis/ieee-cis/cluster_analysis/cluster_assignments.csv
+2025-07-01 16:56:10,786 - IEEECISStatisticalAnalysis - INFO - Saved cluster statistics to data/statis/ieee-cis/cluster_analysis/cluster_statistics.csv
+2025-07-01 16:56:10,788 - IEEECISStatisticalAnalysis - INFO - Saved cluster centroids to data/statis/ieee-cis/cluster_analysis/cluster_centroids.csv
+2025-07-01 16:56:10,788 - IEEECISStatisticalAnalysis - INFO - Analyzing cluster-specific features...
+2025-07-01 16:56:11,096 - IEEECISStatisticalAnalysis - INFO - Saved cluster feature analysis to data/statis/ieee-cis/cluster_analysis/cluster_feature_analysis.json
+2025-07-01 16:56:11,150 - IEEECISStatisticalAnalysis - INFO - Cluster analysis completed: 2 high-risk clusters identified
+2025-07-01 16:56:11,151 - IEEECISStatisticalAnalysis - INFO - High-risk clusters: [1, 2]
+2025-07-01 16:56:11,151 - IEEECISStatisticalAnalysis - INFO - Distinctive features: ['V16', 'M1_is_missing', 'V5', 'addr2_is_missing', 'V46', 'V19', 'M3_T', 'V13', 'V47', 'V20']
+2025-07-01 16:56:11,157 - IEEECISStatisticalAnalysis - INFO - --- 4. Detecção de Anomalias ---
+2025-07-01 16:56:11,157 - IEEECISStatisticalAnalysis - INFO - Executando detecção de anomalias
+2025-07-01 16:56:11,357 - IEEECISStatisticalAnalysis - INFO - Using 163 features for anomaly detection (from 163 expected)
+2025-07-01 16:56:11,613 - IEEECISStatisticalAnalysis - INFO - Filtering to 147 numeric columns for anomaly detection
+2025-07-01 16:56:11,903 - IEEECISStatisticalAnalysis - INFO - Normalizando dados para detecção de anomalias...
+2025-07-01 16:56:12,649 - IEEECISStatisticalAnalysis - INFO - Aplicando Isolation Forest com contaminação=0.05
+2025-07-01 16:56:19,715 - IEEECISStatisticalAnalysis - INFO - Detecção de anomalias concluída: 14200 anomalias encontradas
+2025-07-01 16:56:19,715 - IEEECISStatisticalAnalysis - INFO - Taxa de fraude em anomalias: 0.2006
+2025-07-01 16:56:19,715 - IEEECISStatisticalAnalysis - INFO - Features chave para anomalias: ['dist2_is_missing', 'dist2_category', 'V43', 'addr2', 'ProductCD_C']
+2025-07-01 16:56:19,773 - IEEECISStatisticalAnalysis - INFO - --- 5. Análise Temporal ---
+2025-07-01 16:56:19,773 - IEEECISStatisticalAnalysis - INFO - Executando análise temporal
+2025-07-01 16:56:19,978 - IEEECISStatisticalAnalysis - INFO - Using 7 temporal features: ['TransactionDT', 'transaction_timestamp', 'trans_hour', 'trans_weekday', 'is_night', 'hour_sin', 'is_rare_hour']
+2025-07-01 16:56:20,016 - IEEECISStatisticalAnalysis - INFO - Analisando janelas temporais de 3600s...
+2025-07-01 16:56:24,968 - IEEECISStatisticalAnalysis - INFO - Análise temporal concluída: 245 janelas de alto risco identificadas
+2025-07-01 16:56:24,968 - IEEECISStatisticalAnalysis - INFO - Horários de pico de fraude: [7, 8, 6, 5, 9]
+2025-07-01 16:56:24,968 - IEEECISStatisticalAnalysis - INFO - Período total analisado: 8203667 segundos
+2025-07-01 16:56:25,042 - IEEECISStatisticalAnalysis - INFO - --- 6. Consolidação de Resultados ---
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO - === Todas as Análises Estatísticas Modulares Concluídas ===
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO - Resumo das Análises Modulares:
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Clusters de alto risco: 2
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Anomalias detectadas: 14200
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Janelas temporais de risco: 245
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Pares de alta correlação: 282
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO - 
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO - Recomendações Integradas para Construção de Grafos:
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Features prioritárias (consenso): 31
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Features críticas: 5
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Estratégias de arestas: 4
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO -   - Arquivo consolidado: consolidated_multistat_results.json
+2025-07-01 16:56:25,071 - IEEECISStatisticalAnalysis - INFO - --- 6. Validação da Consistência Estatística ---
+2025-07-01 16:56:25,072 - IEEECISStatisticalAnalysis - WARNING - ⚠️ Questões de consistência estatística detectadas:
+2025-07-01 16:56:25,072 - IEEECISStatisticalAnalysis - WARNING -   - Extremely low feature consistency. Consider reviewing feature engineering and analysis parameters.
+2025-07-01 16:56:25,072 - IEEECISStatisticalAnalysis - INFO - --- 7. Validação de Duplicação de Arquivos ---
+2025-07-01 16:56:25,072 - IEEECISStatisticalAnalysis - INFO - ✓ Validação de duplicação de arquivos passou
+2025-07-01 16:56:25,119 - IEEECISStatisticalAnalysis - INFO - Final memory usage: 1121.7 MB RSS, 3.5%
+2025-07-01 16:56:25,119 - IEEECISStatisticalAnalysis - INFO - Memory increase during analysis: 921.3 MB
+2025-07-01 16:56:25,119 - IEEECISStatisticalAnalysis - INFO - === TODAS AS ANÁLISES E VALIDAÇÕES CONCLUÍDAS COM SUCESSO ===

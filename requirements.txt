@@ -1,0 +1,171 @@
+# Semantic and Structural Drift in Financial Knowledge Graphs - Requirements File
+# A Robustness Analysis of GNN-based Fraud Detectors
+#
+# This file contains all dependencies needed to reproduce the experiments
+# described in the research paper. Install with: pip install -r requirements.txt
+#
+# Paper: "Semantic and Structural Drift in Financial Knowledge Graphs: 
+#         A Robustness Analysis of GNN-based Fraud Detectors"
+# Authors: Rener S. Menezes, Raimir H. Filho
+# Institution: University of Fortaleza (UNIFOR), Brazil
+# Conference: Submitted to ICKG 2025
+# Tested with Python 3.8+ on Linux (Ubuntu 20.04) and Windows 10/11
+# GPU acceleration recommended but not required
+
+# ============================================================================
+# CORE DATA PROCESSING
+# ============================================================================
+
+# Data manipulation and analysis
+pandas>=2.0.0,<3.0.0
+numpy>=1.21.0,<2.0.0
+pyarrow>=10.0.0          # High-performance parquet file I/O
+
+# ============================================================================
+# MACHINE LEARNING CORE
+# ============================================================================
+
+# Traditional ML algorithms
+scikit-learn>=1.2.0,<2.0.0
+lightgbm>=4.0.0          # Feature importance ranking
+
+# Statistical analysis and numerical computing
+scipy>=1.9.0
+
+# ============================================================================
+# DEEP LEARNING AND GRAPH NEURAL NETWORKS
+# ============================================================================
+
+# PyTorch ecosystem (CPU/GPU support)
+torch>=1.13.0,<3.0.0
+torchvision>=0.14.0
+torchaudio>=0.13.0
+
+# Graph Neural Network support
+torch-geometric>=2.2.0,<3.0.0
+torch-scatter>=2.1.0,<3.0.0
+torch-sparse>=0.6.0,<1.0.0
+torch-cluster>=1.6.0,<2.0.0
+torch-spline-conv>=1.2.0,<2.0.0
+
+# ============================================================================
+# GRAPH PROCESSING AND NETWORK ANALYSIS
+# ============================================================================
+
+# Graph construction and analysis
+networkx>=2.8.0,<4.0.0
+
+# ============================================================================
+# STATISTICAL ANALYSIS AND VISUALIZATION
+# ============================================================================
+
+# Statistical analysis
+statsmodels>=0.14.0
+
+# Data visualization (optional but recommended)
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Progress bars for long-running operations
+tqdm>=4.64.0
+
+# ============================================================================
+# SYSTEM UTILITIES AND OPTIMIZATION
+# ============================================================================
+
+# System monitoring and memory optimization
+psutil>=5.9.0            # Memory and CPU monitoring
+pathlib2>=2.3.0          # Enhanced path operations
+
+# Memory and performance optimization
+joblib>=1.2.0            # Parallel processing
+
+# ============================================================================
+# GPU ACCELERATION (OPTIONAL)
+# ============================================================================
+
+# RAPIDS ecosystem for GPU acceleration (uncomment if available)
+# Note: Only install if you have NVIDIA GPU with CUDA 11.0+
+# cudf>=22.10.0,<24.0.0    # GPU-accelerated DataFrames
+# cupy-cuda11x>=11.0.0     # GPU-accelerated NumPy (adjust CUDA version)
+# cuml>=22.10.0            # GPU-accelerated scikit-learn
+
+# ============================================================================
+# DEVELOPMENT AND TESTING (OPTIONAL)
+# ============================================================================
+
+# Code quality and testing (uncomment for development)
+# pytest>=7.0.0           # Testing framework  
+# black>=22.0.0            # Code formatting
+# flake8>=5.0.0            # Code linting
+# jupyter>=1.0.0           # Notebook support for exploration
+
+# ============================================================================
+# PLATFORM-SPECIFIC NOTES
+# ============================================================================
+
+# For Windows users:
+# - Install Microsoft Visual C++ 14.0 or greater if build errors occur
+# - Consider using conda instead of pip for complex dependencies
+
+# For macOS users:
+# - PyTorch MPS acceleration available for Apple Silicon (M1/M2)
+# - Some dependencies may require Xcode command line tools
+
+# For Linux users:
+# - Ensure CUDA toolkit is installed for GPU acceleration
+# - Consider using conda for easier dependency management
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+
+# 1. Create virtual environment:
+#    python -m venv venv
+#    source venv/bin/activate  # Linux/macOS
+#    venv\Scripts\activate     # Windows
+
+# 2. Upgrade pip:
+#    pip install --upgrade pip
+
+# 3. Install requirements:
+#    pip install -r requirements.txt
+
+# 4. Verify installation:
+#    python -c "import torch; print(f'PyTorch: {torch.__version__}')"
+#    python -c "import torch_geometric; print(f'PyG: {torch_geometric.__version__}')"
+#    python -c "import pandas as pd; print(f'Pandas: {pd.__version__}')"
+
+# ============================================================================
+# TROUBLESHOOTING
+# ============================================================================
+
+# If you encounter dependency conflicts:
+# 1. Create a fresh virtual environment
+# 2. Install PyTorch first: pip install torch torchvision torchaudio
+# 3. Install PyTorch Geometric: pip install torch-geometric
+# 4. Install remaining dependencies: pip install -r requirements.txt
+
+# For CUDA compatibility issues:
+# 1. Check your CUDA version: nvidia-smi
+# 2. Install compatible PyTorch: https://pytorch.org/get-started/locally/
+# 3. Verify GPU access: python -c "import torch; print(torch.cuda.is_available())"
+
+# For memory issues during installation:
+# 1. Increase virtual memory/swap space
+# 2. Install dependencies one by one
+# 3. Use conda instead of pip for large packages
+
+# ============================================================================
+# VERSION COMPATIBILITY MATRIX
+# ============================================================================
+
+# Python 3.8:  All dependencies supported
+# Python 3.9:  All dependencies supported  
+# Python 3.10: All dependencies supported
+# Python 3.11: All dependencies supported
+# Python 3.12: All dependencies supported (recommended)
+
+# CUDA 11.0+:  Full GPU acceleration
+# CUDA 12.0+:  Latest features and optimizations
+# CPU-only:    All functionality available (slower performance)

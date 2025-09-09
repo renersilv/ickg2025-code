@@ -1,0 +1,136 @@
+2025-07-01 17:03:40,563 - IEEECISNormalization - INFO - === Iniciando Normalização de Features para IEEE-CIS (GNN) ===
+2025-07-01 17:03:40,563 - IEEECISNormalization - INFO - Diretório do script: /graphsentinel_2.0/src/code/ieee-cis/3_feature_engineering
+2025-07-01 17:03:40,563 - IEEECISNormalization - INFO - Raiz do projeto: /graphsentinel_2.0
+2025-07-01 17:03:40,563 - IEEECISNormalization - INFO - Diretório de logs: /graphsentinel_2.0/data/statis/ieee-cis
+2025-07-01 17:03:40,563 - IEEECISNormalization - INFO - Carregando dados de /graphsentinel_2.0/data/parquet/ieee-cis/ieee-cis-features.parquet
+2025-07-01 17:03:40,822 - IEEECISNormalization - INFO - Dataset carregado: (284000, 180)
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO - Taxa de fraude: 0.0362
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO - Total de features a processar: 178
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO - Tipos de features encontradas:
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO -   - Original PCA (V2-V59): 53
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO -   - Card features: 18
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO -   - Address features: 6
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO -   - C features: 11
+2025-07-01 17:03:40,823 - IEEECISNormalization - INFO -   - D features: 12
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO -   - M features: 9
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO -   - Email features: 12
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO -   - Temporal features: 7
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO -   - Amount features: 5
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO - --- Analisando Distribuições das Features ---
+2025-07-01 17:03:40,824 - IEEECISNormalization - INFO - Analisando distribuições das features...
+2025-07-01 17:03:41,544 - IEEECISNormalization - INFO - original_pca: 25 features
+2025-07-01 17:03:41,544 - IEEECISNormalization - INFO -   - Features com alta assimetria: 16
+2025-07-01 17:03:41,544 - IEEECISNormalization - INFO -   - Features com muitos outliers: 11
+2025-07-01 17:03:41,601 - IEEECISNormalization - INFO - amount_features: 5 features
+2025-07-01 17:03:41,601 - IEEECISNormalization - INFO -   - Features com alta assimetria: 1
+2025-07-01 17:03:41,601 - IEEECISNormalization - INFO -   - Features com muitos outliers: 1
+2025-07-01 17:03:41,640 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: card4
+2025-07-01 17:03:41,655 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: card6
+2025-07-01 17:03:41,761 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: card1_card2_combined
+2025-07-01 17:03:41,761 - IEEECISNormalization - INFO - card_features: 18 features
+2025-07-01 17:03:41,762 - IEEECISNormalization - INFO -   - Features com alta assimetria: 7
+2025-07-01 17:03:41,762 - IEEECISNormalization - INFO -   - Features com muitos outliers: 3
+2025-07-01 17:03:41,821 - IEEECISNormalization - INFO - addr_features: 6 features
+2025-07-01 17:03:41,821 - IEEECISNormalization - INFO -   - Features com alta assimetria: 4
+2025-07-01 17:03:41,821 - IEEECISNormalization - INFO -   - Features com muitos outliers: 3
+2025-07-01 17:03:41,823 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: transaction_timestamp
+2025-07-01 17:03:41,858 - IEEECISNormalization - INFO - temporal_engineered: 5 features
+2025-07-01 17:03:41,858 - IEEECISNormalization - INFO -   - Features com alta assimetria: 1
+2025-07-01 17:03:41,858 - IEEECISNormalization - INFO -   - Features com muitos outliers: 1
+2025-07-01 17:03:41,893 - IEEECISNormalization - INFO - statistical_features: 3 features
+2025-07-01 17:03:41,893 - IEEECISNormalization - INFO -   - Features com alta assimetria: 1
+2025-07-01 17:03:41,893 - IEEECISNormalization - INFO -   - Features com muitos outliers: 1
+2025-07-01 17:03:41,896 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M1
+2025-07-01 17:03:41,900 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M2
+2025-07-01 17:03:41,903 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M3
+2025-07-01 17:03:41,908 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M5
+2025-07-01 17:03:41,911 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M6
+2025-07-01 17:03:41,915 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M7
+2025-07-01 17:03:41,919 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M8
+2025-07-01 17:03:41,923 - IEEECISNormalization - INFO -   Pulando análise estatística para coluna categórica: M9
+2025-07-01 17:03:42,343 - IEEECISNormalization - INFO - binary_features: 55 features
+2025-07-01 17:03:42,343 - IEEECISNormalization - INFO -   - Features com alta assimetria: 25
+2025-07-01 17:03:42,343 - IEEECISNormalization - INFO -   - Features com muitos outliers: 19
+2025-07-01 17:03:42,407 - IEEECISNormalization - INFO - clustering_features: 5 features
+2025-07-01 17:03:42,407 - IEEECISNormalization - INFO -   - Features com alta assimetria: 4
+2025-07-01 17:03:42,407 - IEEECISNormalization - INFO -   - Features com muitos outliers: 4
+2025-07-01 17:03:42,472 - IEEECISNormalization - INFO - pca_features: 6 features
+2025-07-01 17:03:42,472 - IEEECISNormalization - INFO -   - Features com alta assimetria: 2
+2025-07-01 17:03:42,473 - IEEECISNormalization - INFO -   - Features com muitos outliers: 2
+2025-07-01 17:03:42,488 - IEEECISNormalization - INFO - anomaly_features: 1 features
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO - magnitude_features: 2 features
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO -   - Features com alta assimetria: 2
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO -   - Features com muitos outliers: 2
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO - --- Executando Normalização Completa para GNN ---
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO - 🔧 Iniciando normalização OTIMIZADA para GNN com standard_clipped scaler...
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO - Total de features a normalizar: 177
+2025-07-01 17:03:42,514 - IEEECISNormalization - INFO - Features excluídas: ['TransactionDT', 'isFraud', 'card1']
+2025-07-01 17:03:43,009 - IEEECISNormalization - INFO - Preparando features para normalização...
+2025-07-01 17:03:43,009 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: ProductCD
+2025-07-01 17:03:43,010 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: card4
+2025-07-01 17:03:43,011 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: card6
+2025-07-01 17:03:43,012 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: P_emaildomain
+2025-07-01 17:03:43,012 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: R_emaildomain
+2025-07-01 17:03:43,013 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M1
+2025-07-01 17:03:43,014 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M2
+2025-07-01 17:03:43,015 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M3
+2025-07-01 17:03:43,015 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M4
+2025-07-01 17:03:43,016 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M5
+2025-07-01 17:03:43,017 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M6
+2025-07-01 17:03:43,017 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M7
+2025-07-01 17:03:43,018 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M8
+2025-07-01 17:03:43,018 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: M9
+2025-07-01 17:03:43,021 - IEEECISNormalization - INFO - Convertendo coluna datetime para timestamp: transaction_timestamp
+2025-07-01 17:03:43,024 - IEEECISNormalization - INFO - Convertendo coluna categórica para numérica: card1_card2_combined
+2025-07-01 17:03:43,273 - IEEECISNormalization - INFO - Convertidas 15 colunas categóricas para numéricas
+2025-07-01 17:03:43,273 - IEEECISNormalization - INFO - 🚨 APLICANDO CLIPPING DE OUTLIERS (98.5% dos dados preservados)
+2025-07-01 17:03:43,288 - IEEECISNormalization - INFO -    🔧 TransactionAmt: 4237 outliers (1.49%) [0.251, 5543.230] → [7.747, 1464.950]
+2025-07-01 17:03:44,321 - IEEECISNormalization - INFO -    🔧 transaction_timestamp: 4260 outliers (1.50%) [7607464000000000.000, 15811131000000000.000] → [7676206790000000.000, 15761238457500000.000]
+2025-07-01 17:03:44,350 - IEEECISNormalization - INFO -    🔧 amount_log: 4237 outliers (1.49%) [0.224, 8.621] → [2.169, 7.290]
+2025-07-01 17:03:44,375 - IEEECISNormalization - INFO -    🔧 amount_rank: 4237 outliers (1.49%) [0.000, 1.000] → [0.007, 0.992]
+2025-07-01 17:03:44,699 - IEEECISNormalization - INFO -    🔧 dt_per_amt: 4260 outliers (1.50%) [1486.570, 9661922.000] → [7684.791, 1398730.500]
+2025-07-01 17:03:44,718 - IEEECISNormalization - INFO -    🔧 card1_card2_combined: 4244 outliers (1.49%) [0.000, 10578.000] → [2.000, 9191.008]
+2025-07-01 17:03:44,789 - IEEECISNormalization - INFO -    🔧 anomaly_score: 4260 outliers (1.50%) [-0.194, 0.153] → [-0.188, 0.060]
+2025-07-01 17:03:44,799 - IEEECISNormalization - INFO -    🔧 pc_1: 4234 outliers (1.49%) [-22.016, 13.668] → [-16.560, 5.256]
+2025-07-01 17:03:44,809 - IEEECISNormalization - INFO -    🔧 pc_2: 4234 outliers (1.49%) [-14.327, 29.010] → [-11.515, 8.377]
+2025-07-01 17:03:44,819 - IEEECISNormalization - INFO -    🔧 pc_3: 4234 outliers (1.49%) [-11.600, 23.840] → [-4.336, 7.825]
+2025-07-01 17:03:44,829 - IEEECISNormalization - INFO -    🔧 pc_4: 4234 outliers (1.49%) [-2.599, 32.083] → [-1.689, 5.699]
+2025-07-01 17:03:44,840 - IEEECISNormalization - INFO -    🔧 pc_5: 4234 outliers (1.49%) [-32.101, 12.881] → [-4.851, 5.381]
+2025-07-01 17:03:44,851 - IEEECISNormalization - INFO -    🔧 pc_6: 4234 outliers (1.49%) [-7.285, 48.505] → [-3.865, 3.467]
+2025-07-01 17:03:44,861 - IEEECISNormalization - INFO -    🔧 temporal_position: 4260 outliers (1.50%) [0.000, 1.000] → [0.008, 0.994]
+2025-07-01 17:03:44,885 - IEEECISNormalization - INFO - ✓ Clipping concluído: 188,793 outliers em 111 features
+2025-07-01 17:03:44,885 - IEEECISNormalization - INFO -    Usando StandardScaler após clipping (otimizado para GNN)
+2025-07-01 17:03:44,885 - IEEECISNormalization - INFO - Aplicando normalização...
+2025-07-01 17:03:46,032 - IEEECISNormalization - INFO - Verificando resultados da normalização...
+2025-07-01 17:03:46,036 - IEEECISNormalization - INFO -   TransactionAmt: Original: μ=137.878, σ=242.875 → Normalizado: μ=0.000, σ=1.000
+2025-07-01 17:03:46,038 - IEEECISNormalization - INFO -   ProductCD: Original: categórica convertida → Normalizado: μ=0.000, σ=1.000
+2025-07-01 17:03:46,043 - IEEECISNormalization - INFO -   card2: Original: μ=359.166, σ=157.039 → Normalizado: μ=0.000, σ=1.000
+2025-07-01 17:03:46,048 - IEEECISNormalization - INFO -   card3: Original: μ=153.117, σ=11.185 → Normalizado: μ=-0.000, σ=1.000
+2025-07-01 17:03:46,050 - IEEECISNormalization - INFO -   card4: Original: categórica convertida → Normalizado: μ=0.000, σ=1.000
+2025-07-01 17:03:46,347 - IEEECISNormalization - INFO - Normalização concluída com sucesso!
+2025-07-01 17:03:46,347 - IEEECISNormalization - INFO - Features normalizadas: 177
+2025-07-01 17:03:46,347 - IEEECISNormalization - INFO - Shape final: (284000, 180)
+2025-07-01 17:03:46,350 - IEEECISNormalization - INFO - --- Salvando Resultados ---
+2025-07-01 17:03:46,350 - IEEECISNormalization - INFO - Salvando dados normalizados...
+2025-07-01 17:03:47,601 - IEEECISNormalization - INFO - Dataset normalizado salvo: /graphsentinel_2.0/data/parquet/ieee-cis/ieee-cis-features-normalized.parquet
+2025-07-01 17:03:47,602 - IEEECISNormalization - INFO - Scaler salvo: /graphsentinel_2.0/data/parquet/ieee-cis/feature_scaler.pkl
+2025-07-01 17:03:47,604 - IEEECISNormalization - INFO - Metadados salvos: /graphsentinel_2.0/data/parquet/ieee-cis/normalization_metadata.json
+2025-07-01 17:03:47,604 - IEEECISNormalization - INFO - --- Validação Final da Normalização ---
+2025-07-01 17:03:53,998 - IEEECISNormalization - INFO - ✓ Validação da normalização:
+2025-07-01 17:03:53,998 - IEEECISNormalization - INFO -    - Range global: [-7.143, 10.367]
+2025-07-01 17:03:53,998 - IEEECISNormalization - INFO -    - Média global: 0.000000
+2025-07-01 17:03:53,998 - IEEECISNormalization - INFO -    - Desvio padrão: 0.968429
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -    - Valores em [-3, +3]: 49,739,774/50,268,000 (98.9%)
+2025-07-01 17:03:53,999 - IEEECISNormalization - WARNING - ⚠️ Normalização pode ter problemas:
+2025-07-01 17:03:53,999 - IEEECISNormalization - WARNING -    - Range muito amplo: [-7.143, 10.367]
+2025-07-01 17:03:53,999 - IEEECISNormalization - WARNING -    - Muitos outliers: apenas 98.9% em [-3,+3]
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO - === Normalização de Features Concluída ===
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO - Resumo da Normalização:
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Dataset original: (284000, 180)
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Dataset normalizado: (284000, 180)
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Features normalizadas: 177
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Features excluídas: ['TransactionDT', 'isFraud', 'card1']
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Scaler utilizado: standard_clipped
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Arquivo de saída: /graphsentinel_2.0/data/parquet/ieee-cis/ieee-cis-features-normalized.parquet
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Scaler salvo em: /graphsentinel_2.0/data/parquet/ieee-cis/feature_scaler.pkl
+2025-07-01 17:03:53,999 - IEEECISNormalization - INFO -   - Metadados em: /graphsentinel_2.0/data/parquet/ieee-cis/normalization_metadata.json
